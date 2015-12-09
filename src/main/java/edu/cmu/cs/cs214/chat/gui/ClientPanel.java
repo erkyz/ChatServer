@@ -182,6 +182,7 @@ public class ClientPanel extends JPanel implements ClientChangeListener {
      */
     @Override
     public void startChat(String username, String port, String ip) {
+    	this.displayErrorMessage(username+" has joined server.");
         this.messageField.setEnabled(true);
         this.scrollPane.setEnabled(true);
         this.sendButton.setEnabled(true);
